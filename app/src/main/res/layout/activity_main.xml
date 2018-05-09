@@ -1,0 +1,199 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="230dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/aldrich"
+                android:padding="4dp"
+                android:text="@string/home"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/hGoals"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="60dp"
+                android:layout_marginRight="0dp"
+                android:background="@color/colorPrimary"
+                android:onClick="addOneGoalForHomeTeam"
+                android:text="@string/goals"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/goalScore"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignBaseline="@+id/hGoals"
+                android:layout_alignBottom="@+id/hGoals"
+                android:layout_toEndOf="@+id/hGoals"
+                android:layout_toRightOf="@+id/hGoals"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:padding="8dp"
+                android:text="@string/_0"
+                android:textColor="@android:color/white"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/foals"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/hGoals"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/hGoals"
+                android:background="@color/colorPrimary"
+                android:onClick="addFoulForHomeTeam"
+                android:text="@string/foals"
+                android:textColor="@android:color/white"
+                android:textSize="29sp" />
+
+            <TextView
+                android:id="@+id/foalsScore"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignBaseline="@+id/foals"
+                android:layout_alignBottom="@+id/foals"
+                android:layout_alignLeft="@+id/goalScore"
+                android:layout_alignStart="@+id/goalScore"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:padding="8dp"
+                android:text="@string/_0"
+                android:textColor="@android:color/white"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/white" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="230dp"
+            android:layout_marginLeft="0dp"
+            android:layout_weight="1"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/visitor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/aldrich"
+                android:padding="4dp"
+                android:text="@string/visitor"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/vGoalsB"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/visitor"
+                android:layout_centerVertical="true"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="60dp"
+                android:layout_marginRight="14dp"
+                android:background="@color/colorPrimary"
+                android:onClick="addOneForVisitorTeam"
+                android:text="@string/goals"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/vGoalScore"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignBaseline="@+id/vGoalsB"
+                android:layout_alignBottom="@+id/vGoalsB"
+                android:layout_toEndOf="@+id/vGoalsB"
+                android:layout_toRightOf="@+id/vGoalsB"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:padding="8dp"
+                android:text="@string/_0"
+                android:textColor="@android:color/white"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/vFoals"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/vGoalsB"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/vGoalsB"
+                android:background="@color/colorPrimary"
+                android:onClick="addFoulVisitorTeam"
+                android:text="@string/foals"
+                android:textColor="@android:color/white"
+                android:textSize="29sp" />
+
+            <TextView
+                android:id="@+id/vFoalsScore"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignBaseline="@+id/vFoals"
+                android:layout_alignBottom="@+id/vFoals"
+                android:layout_alignLeft="@+id/vGoalScore"
+                android:layout_alignStart="@+id/vGoalScore"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:padding="8dp"
+                android:text="@string/_0"
+                android:textColor="@android:color/white"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="17dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white"
+        android:onClick="reset"
+        android:text="@string/reset"
+        android:textSize="25sp" />
+
+</RelativeLayout>
+
+
+

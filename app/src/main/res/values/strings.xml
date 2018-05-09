@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Soccer Score Keeper</string>
+    <string name="home">Home</string>
+    <string name="visitor">Visitor</string>
+    <string name="goals">Goals</string>
+    <string name="_0">0</string>
+    <string name="reset">Reset</string>
+    <string name="foals">Foals</string>
+    <string name="version_alpha">Version Alpha</string>
+    <color name="white">#FFFFFF</color>
+</resources>

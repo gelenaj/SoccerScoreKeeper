@@ -1,6 +1,9 @@
 # SoccerScoreKeeper
 This was the second project for the Android Basics Nanodegree program through Udacity/Google. This project was submitted, reviewed and accepted on first submission. The version published here had minor changes based on feedback. 
 
+![applandscapescreenshot](https://user-images.githubusercontent.com/29842242/39826913-4f2e62c2-5384-11e8-8471-e349c158e7cc.png)
+![appportraitscreenshot](https://user-images.githubusercontent.com/29842242/39826921-5387e7e4-5384-11e8-9d60-539255f2b649.png)
+
 
 CRITERIA | MEETS SPECIFICATIONS
 -- | --
@@ -10,5 +13,8 @@ Column contents | Each column contains a large TextView to keep track of the cur
 Score buttons | Each column contains multiple buttons. The buttons must track either:Each track a different kind of scoringOrEach track a different metric (one score, the other fouls, for instance).
 Reset button | The layout contains a ‘reset’ button.
 Best practices | "The code adheres to all of the following best practices:Text sizes are defined in spLengths are defined in dpPadding and margin is used appropriately, such that the views are not crammed up against each other."
+
+
+
 
 

@@ -4,6 +4,7 @@ This was the second project for the Android Basics Nanodegree program through Ud
 ![applandscapescreenshot](https://user-images.githubusercontent.com/29842242/39826913-4f2e62c2-5384-11e8-8471-e349c158e7cc.png)
 ![appportraitscreenshot](https://user-images.githubusercontent.com/29842242/39826921-5387e7e4-5384-11e8-9d60-539255f2b649.png)
 
+App Demo: https://www.youtube.com/watch?v=_6UkjYaqpPo
 
 CRITERIA | MEETS SPECIFICATIONS
 -- | --
